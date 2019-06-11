@@ -71,9 +71,13 @@ contains('Pencil', items, showResult); // true
 contains('Pen', items, showResult); // false
 
 /* STRETCH PROBLEM */
+const items2 = ['Pencil', 'Notebook', 'Pencil', 'yo-yo', 'Gum', 'Gum'];
 
 function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
+  // for (let i = 0; i , array.length; i++) {
+    // if (array[i] ===)
+  // }
 }

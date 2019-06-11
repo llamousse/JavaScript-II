@@ -88,7 +88,28 @@ console.log(ticketPriceTotal);
 // Now that you have used .forEach(), .map(), .filter(), and .reduce().  I want you to think of potential problems you could solve given the data set and the 5k fun run theme.  Try to create and then solve 3 unique problems using one or many of the array methods listed above.
 
 // Problem 1
+// Event director needing the list of the runner's company sorted in alphabetical order
+let companySort = [];
+runners.forEach(runners => companySort.push(runners.company_name));
+companySort.sort();
+console.log(companySort)
 
 // Problem 2
+// List of runners who donated more than 100 dollars
+let ballers = [];
+ballers = runners.filter((state) => {
+    return state.donation >= 100;
+});
+console.log(ballers);
 
 // Problem 3
+// Total amount of donations less than 100 dollars stored into new array totalAmountMin
+let amountMin = [];
+amountMin = runners.filter((state) => {
+    return state.donation <= 100;
+});
+let minTicketPriceTotal = [];
+minTicketPriceTotal = amountMin.reduce((total, state) => {
+    return total += state.donation;
+}, 0);
+console.log(minTicketPriceTotal);
