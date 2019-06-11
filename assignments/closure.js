@@ -1,6 +1,11 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-
+const coffee = 'vanilla latte';
+function drink() {
+  return coffee;
+}
+drink();
+console.log(drink());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
